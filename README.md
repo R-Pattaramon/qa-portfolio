@@ -5,6 +5,11 @@
 **Tools:** Postman  
 **API:** jsonplaceholder.typicode.com  
 
+### What I tested
+- Happy path: GET users, filter by ID
+- Error handling: Non-existing resource (404)
+- Create resource: POST with dynamic data
+
 ### Test Cases
 | # | Request | Method | Expected Status |
 |---|---------|--------|----------------|
