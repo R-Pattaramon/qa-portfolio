@@ -36,7 +36,7 @@
 
 
 ##Bug ID: BUG-001
-**Title: POST /posts ไม่ validate required field**
+- **Title: POST /posts ไม่ validate required field**
 - Severity: Medium
 - Steps to reproduce:
   1. ส่ง POST /posts โดยไม่ใส่ title
