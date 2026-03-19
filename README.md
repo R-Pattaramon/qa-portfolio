@@ -30,15 +30,8 @@
 | 3 | Get non-existing post by id | GET | id=101 | 404 | {} empty object |
 | 4 | Get comment | GET | id=1 | 200 | Array of posts |
 | 5 | Filter comment | GET | postId=2 | 200 | Array of posts |
-| 6 | Create posts  | POST | {
-  "title": "Testing",
-  "body": "This is a test",
-  "userId": 1
-} | 201 | Created object with id |
-| 7 | Create posts (no title)  | POST |  "title": "",
-  "body": "This is a test",
-  "userId": 1
-} | 400 | Error message |
+| 6 | Create posts  | POST |title,body,userId| 201 | Created object with id |
+| 7 | Create posts (no title)  | POST | body,userId | 400 | Error message |
 | 8 | Delete posts by id | DELETE | - | 201 | Success |
 
 
