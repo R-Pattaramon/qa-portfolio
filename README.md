@@ -35,7 +35,7 @@
 | 8 | Delete posts by id | DELETE | 201 |
 
 
-##Bug ID: BUG-001
+#Bug ID: BUG-001
 - **Title: POST /posts ไม่ validate required field**
 - Severity: Medium
 - Steps to reproduce:
