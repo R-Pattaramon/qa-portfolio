@@ -1,8 +1,8 @@
 # qa-portfolio
 
-#Project 2
+## Project 2
 
-#Test plan
+## Test plan
 
 - Objective: ทดสอบการเรียกดูบทความ เจ้าของบทความ และคอมเม้นท์
 - Scope: ครอบคลุมการโพส และการเรียกดูข้อมูล
@@ -10,7 +10,7 @@
 - Tools: Postman
 - Test types: Functional, Error handling
 
-#Test Scenario
+## Test Scenario
 - ผู้ใช้ดูรายการบทความทั้งหมด
 - ผู้ใช้ดูบทความจากไอดีผู้เขียน
 - ผู้ใช้เปิดบทความที่ไม่มีอยู่จริง
@@ -35,7 +35,7 @@
 | 8 | Delete posts by id | DELETE | 201 |
 
 
-#Bug ID: BUG-001
+## Bug ID: BUG-001
 - **Title: POST /posts ไม่ validate required field**
 - Severity: Medium
 - Steps to reproduce:
