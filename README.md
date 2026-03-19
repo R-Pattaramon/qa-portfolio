@@ -23,16 +23,23 @@
 
 ### Test Cases
 
-| # | Request | Method | Expected Status |
-|---|---------|--------|----------------|
-| 1 | Get all post | GET | 200 |
-| 2 | Filter post by id | GET | 200 |
-| 3 | Get non-existing post by id | GET | 404 |
-| 4 | Get comment | GET | 200 |
-| 5 | Filter comment | GET | 200 |
-| 6 | Create posts  | POST | 400 |
-| 7 | Create posts by title null  | POST | 201 |
-| 8 | Delete posts by id | DELETE | 201 |
+| # | Request | Method | Test Data | Expected Status | Expected Response |
+|---|---------|--------|-----------|-----------------|-------------------|
+| 1 | Get all post | GET | - | 200 | Array of posts |
+| 2 | Filter post by id | GET | id=1 | 200 | Array of posts |
+| 3 | Get non-existing post by id | GET | id=101 | 404 | {} empty object |
+| 4 | Get comment | GET | id=1 | 200 | Array of posts |
+| 5 | Filter comment | GET | postId=2 | 200 | Array of posts |
+| 6 | Create posts  | POST | {
+  "title": "Testing",
+  "body": "This is a test",
+  "userId": 1
+} | 201 | Created object with id |
+| 7 | Create posts (no title)  | POST |  "title": "",
+  "body": "This is a test",
+  "userId": 1
+} | 400 | Error message |
+| 8 | Delete posts by id | DELETE | - | 201 | Success |
 
 
 ### Bug ID: BUG-001
