@@ -1,0 +1,15 @@
+### Test Scenario
+- User gets all products
+- User gets one product by id
+- User gets one product by invalid id
+- User searches products by keyword
+- User gets products with limit and selected fields
+- User gets products sorted by title (ascending)
+- User gets all categories
+- User gets category lists
+- User gets product by category
+- User gets product by invalid category
+- User adds a product
+- User updates a product
+- User adds a product with empty title
+- User deletes a product
