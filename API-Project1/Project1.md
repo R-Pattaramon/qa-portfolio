@@ -1,4 +1,4 @@
-## Project 2 – API Testing (Postman)
+## Project 1 – API Testing (Postman)
 
 ## Overview
 
