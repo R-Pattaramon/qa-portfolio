@@ -44,12 +44,21 @@ saucedemo-robotframework/
 ---
 ### How to Run
 1. ติดตั้ง dependencies
-2. pip install robotframework
-3. pip install robotframework-seleniumlibrary
-4. รัน test ทั้งหมด
-5. robot -d results Testcases/
---- 
-### เปิดผลลัพธ์
+   ```
+   pip install robotframework
+   pip install robotframework-seleniumlibrary
+   ```
+   
+   **_*หมายเหตุ_**
+- ควรติดตั้ง Python และ Google Chrome ก่อนใช้งาน
+- หากคำสั่ง pip ใช้งานไม่ได้ สามารถลองใช้ pip3 แทน
+- หากไม่สามารถเปิด browser ได้ อาจต้องติดตั้ง ChromeDriver หรืออัปเดต Selenium
+
+2. รัน test ทั้งหมด
+   ```
+   robot -d results Testcases/
+   ```
+3. เปิดผลลัพธ์
 * results/report.html
 * results/log.html
 ---
@@ -71,9 +80,10 @@ saucedemo-robotframework/
 ---    
 ### Bug Report & Observations
 **สิ่งที่พบระหว่างการทดสอบ**
-1. ระบบสามารถรับค่า First Name ที่มีอักขระพิเศษได้
-2. ไม่มีการตรวจสอบ format ของข้อมูล (เช่น postal code)
-3. ไม่มี error message สำหรับข้อมูลที่ไม่เหมาะสม
+1. ระบบสามารถรับค่า First Name ที่มีอักขระพิเศษได้ โดยไม่มีการตรวจสอบรูปแบบข้อมูล  
+2. ไม่มีการตรวจสอบ format ของข้อมูลในบาง field เช่น Postal Code  
+3. ระบบไม่แสดง error message สำหรับข้อมูลที่ไม่เหมาะสม  
+4. ระบบอนุญาตให้เข้าสู่ขั้นตอน Checkout ได้แม้ไม่มีสินค้าในตะกร้า โดยไม่มีการแจ้งเตือน  
    
 **หมายเหตุ**
 ข้อสังเกตเหล่านี้เป็นการมองในมุมของการปรับปรุงระบบ ไม่ได้ส่งผลให้ flow หลักของระบบใช้งานไม่ได้
