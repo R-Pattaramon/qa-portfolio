@@ -38,7 +38,7 @@ saucedemo-robotframework/
 │   └── Checkout_testcase.robot
 ├── TestArtifacts/
 │   ├── Test_Scenario_saucedemo.xlsx
-│   └── Testcase_saucedemo.xlsx
+│   └── Test_Case_saucedemo.xlsx
 └── results/
 ```
 ---
