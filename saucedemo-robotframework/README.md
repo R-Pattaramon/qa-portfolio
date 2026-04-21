@@ -37,9 +37,9 @@ saucedemo-robotframework/
 │   ├── Inventory_testcase.robot
 │   └── Checkout_testcase.robot
 ├── TestArtifacts/
-│   ├── Test_Scenario_saucedemo.xlsx
-│   └── Test_Case_saucedemo.xlsx
-└── results/
+    ├── Test_Scenario_saucedemo.xlsx
+    └── Test_Case_saucedemo.xlsx
+
 ```
 ---
 ### How to Run
